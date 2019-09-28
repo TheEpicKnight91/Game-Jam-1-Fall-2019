@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-0.1500009298324585,"y":1.2742269039154053,"z":2.614738702774048},"rotation":{"x":-0.05877714604139328,"y":-0.002708431100472808,"z":0.00035789894172921777,"w":-0.9983553290367127},"size":0.12699919939041139,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.4807480573654175,"y":1.4047571420669556,"z":-0.252154678106308},"rotation":{"x":0.15230001509189607,"y":0.07319705933332443,"z":-0.011269070208072663,"w":0.9856067895889282},"size":13.688263893127442,"orthographic":false}
+>>>>>>> parent of 400e40e... Merge branch 'master' of https://github.com/TheEpicKnight91/Game-Jam-1-Fall-2019
