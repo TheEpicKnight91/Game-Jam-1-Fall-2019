@@ -27,9 +27,9 @@ public class moth_spawning : MonoBehaviour
 
     void spawning()
     {
-        float pos_x = Random.Range(-4.7f, 4.7f);
-        float pos_y = Random.Range(0.3f, 1.8f);
-        float pos_z = Random.Range(4.3f, -4.3f);
+        float pos_x = Random.Range(-1.819f,2.286f);
+        float pos_y = Random.Range(0.674f, 1.825f);
+        float pos_z = Random.Range(3.319f, 4.222f);
         Instantiate(moth_prefab, new Vector3(pos_x, pos_y, pos_z),Quaternion.identity);
         amount++;
         spawn_time = 5.0f;

@@ -22,20 +22,20 @@ public class Moth_script : MonoBehaviour
         if (dist <= 0.05f && damage_done == false)
         {
             computer.GetComponent<computer_script>().Health-=2;
-            damage_done = true;
+            //damage_done = true;
+            Destroy(this.gameObject);
         }
         if (teleport_timer <= 0.0f)
         {
-            float pos_x = Random.Range(-4.7f, 4.7f);
-            float pos_y = Random.Range(0.3f, 1.8f);
-            float pos_z = Random.Range(4.3f, -4.3f);
+            float pos_x = Random.Range(-1.819f, 2.286f);
+            float pos_y = Random.Range(0.674f, 1.825f);
+            float pos_z = Random.Range(3.319f, 4.222f);
             transform.position = new Vector3(pos_x, pos_y, pos_z);
-            damage_done = false;
             teleport_timer = 10.0f;
         }
         transform.rotation = Quaternion.LookRotation((computer.transform.position - transform.position).normalized);
         transform.rotation = Quaternion.Euler(-90,transform.position.y, transform.rotation.z);
-        transform.position = Vector3.Lerp(transform.position, end_pos, 1.0f * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, end_pos, 0.09f * Time.deltaTime);
         teleport_timer -= Time.deltaTime;
     }
 }
