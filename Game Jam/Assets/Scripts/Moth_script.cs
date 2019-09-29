@@ -7,6 +7,7 @@ public class Moth_script : MonoBehaviour
     private float teleport_timer = 4.0f;
     public GameObject computer;
     private Vector3 end_pos;
+    private bool damage_done = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +19,10 @@ public class Moth_script : MonoBehaviour
     void Update()
     {
         float dist = (transform.position - end_pos).sqrMagnitude;
-        if (dist <= 0.05f)
+        if (dist <= 0.05f && damage_done == false)
         {
             computer.GetComponent<computer_script>().Health-=2;
+            damage_done = true;
         }
         if (teleport_timer <= 0.0f)
         {
@@ -28,6 +30,7 @@ public class Moth_script : MonoBehaviour
             float pos_y = Random.Range(0.3f, 1.8f);
             float pos_z = Random.Range(4.3f, -4.3f);
             transform.position = new Vector3(pos_x, pos_y, pos_z);
+            damage_done = false;
             teleport_timer = 10.0f;
         }
         transform.rotation = Quaternion.LookRotation((computer.transform.position - transform.position).normalized);

@@ -7,3 +7,7 @@ You randomly teleport
 Moths will dissapear
 You get two flyswatters, one is real, one is fake
 You have an offset when swinging flyswatter
+Moths teleport randomly(done)
+Main Menu (Done)
+Game Over screen
+
