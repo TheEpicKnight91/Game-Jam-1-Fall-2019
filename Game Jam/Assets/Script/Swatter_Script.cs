@@ -112,7 +112,6 @@ public class Swatter_Script : MonoBehaviour
             {
                 ParticleSystem part = other.GetComponent<ParticleSystem>();
                 part.Play();
-                print("hit");
                 MeshRenderer mesh = other.GetComponent<MeshRenderer>();
                 mesh.enabled = false;
                 Destroy(other.gameObject, 3);
