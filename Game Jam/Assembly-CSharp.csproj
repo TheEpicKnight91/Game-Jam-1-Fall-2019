@@ -108,6 +108,10 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Script\Swatter_Script.cs" />
+    <Compile Include="Assets\Scripts\computer_script.cs" />
+    <Compile Include="Assets\Scripts\Flashing_Text_Script.cs" />
+    <Compile Include="Assets\Scripts\Moth_script.cs" />
+    <Compile Include="Assets\Scripts\moth_spawning.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
@@ -168,20 +172,20 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

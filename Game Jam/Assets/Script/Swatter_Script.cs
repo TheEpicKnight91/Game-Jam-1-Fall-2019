@@ -75,9 +75,9 @@ public class Swatter_Script : MonoBehaviour
         {
             Collection.SetActive(false);
             Tipsy_Timer += Time.deltaTime;
-
-            if (Tipsy_Timer >= 1.5f)
-                Collection.SetActive(true);
         }
+
+        if (Tipsy_Chance == 1)
+            Collection.SetActive(true);
     }
 }
