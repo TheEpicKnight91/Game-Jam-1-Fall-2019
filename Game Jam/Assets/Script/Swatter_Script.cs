@@ -17,12 +17,19 @@ public class Swatter_Script : MonoBehaviour
     private float Tipsy_Timer = 0;
     private float Check = 0;
     public AudioSource Sound_Player;
+    public AudioSource What_Player;
     public AudioClip Regular;
     public AudioClip Bruh;
     public AudioClip Gone;
+    public float Low_X, High_X, Low_Y, High_Y;
 
     void Start()
     {
+        Low_X = this.transform.position.x - 20;
+        High_X = this.transform.position.x + 20;
+        Low_Y = this.transform.position.y - 20;
+        High_Y = this.transform.position.y + 20;
+
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
     }
@@ -30,11 +37,14 @@ public class Swatter_Script : MonoBehaviour
     {
         Check += Time.deltaTime;
 
-        if (Check >= 2)
+        if (Check >= 5)
         {
             Too_Tipsy();
             Check = 0;
         }
+
+        if (this.transform.position.x <= Low_X || this.transform.position.x >= High_X || this.transform.position.y <= Low_Y || this.transform.position.y >= High_Y)
+            this.transform.position = Original_Position;
 
         float Move_Horizontal = Input.GetAxis("Horizontal");
         float Move_Vertical = Input.GetAxis("Vertical");
@@ -84,11 +94,8 @@ public class Swatter_Script : MonoBehaviour
             if (Chance == 0 && Once)
             {
                 GameObject Clone = Instantiate(Moth, other.transform.position, Quaternion.identity);
-                Sound_Player.enabled = true;
+                What_Player.enabled = true;
                 Once = false;
-
-                if (!Sound_Player.isPlaying)
-                    Sound_Player.enabled = false;
             }
 
             if (Chance == 1)
@@ -107,7 +114,7 @@ public class Swatter_Script : MonoBehaviour
     {
         int Tipsy_Chance = Random.Range(0, 2);
 
-        if (Tipsy_Chance == 1)
+        if (Tipsy_Chance == 1 && !Sound_Player.isPlaying)
         {
             Collection.SetActive(false);
             Sound_Player.clip = Gone;
