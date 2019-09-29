@@ -813,6 +813,9 @@ MonoBehaviour:
   Moth: {fileID: 1497317221330002957, guid: ed0d1a50ccbabf3438f90705b401b582, type: 3}
   Collection: {fileID: 5309829923881317073}
   Sound_Player: {fileID: 1177817192344765699}
+  Regular: {fileID: 8300000, guid: 416c1e8bdbc92514a8a5b4092edcd5a9, type: 3}
+  Bruh: {fileID: 8300000, guid: 5002542c342aaeb4da598e873c54d921, type: 3}
+  Gone: {fileID: 8300000, guid: b012d9a67d5a5c448afe7cbb00107f36, type: 3}
 --- !u!64 &7340584488544709004
 MeshCollider:
   m_ObjectHideFlags: 0
