@@ -35,7 +35,7 @@ public class Moth_script : MonoBehaviour
         }
         transform.rotation = Quaternion.LookRotation((computer.transform.position - transform.position).normalized);
         transform.rotation = Quaternion.Euler(-90,transform.position.y, transform.rotation.z);
-        transform.position = Vector3.Lerp(transform.position, end_pos, 0.02f);
+        transform.position = Vector3.Lerp(transform.position, end_pos, 1.0f * Time.deltaTime);
         teleport_timer -= Time.deltaTime;
     }
 }

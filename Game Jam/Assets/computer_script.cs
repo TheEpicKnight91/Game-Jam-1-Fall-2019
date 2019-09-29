@@ -5,17 +5,22 @@ using UnityEngine.UI;
 
 public class computer_script : MonoBehaviour
 {
-    public float Health = 100.0f;
+    public float Health = 10.0f;
     public Text txt;
     // Start is called before the first frame update
     void Start()
     {
-        txt.GetComponent<Text>().text = "Computer Health: 100";
+        txt.GetComponent<Text>().text = "Computer Health: " + Health;
     }
 
     // Update is called once per frame
     void Update()
     {
         txt.GetComponent<Text>().text = "Computer Health: " + Health;
+        if (Health <= 0.0f)
+        {
+            Time.timeScale = 0;
+
+        }
     }
 }
