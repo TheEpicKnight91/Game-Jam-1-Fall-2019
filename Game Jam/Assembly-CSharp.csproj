@@ -109,6 +109,7 @@
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Script\Swatter_Script.cs" />
     <Compile Include="Assets\Scripts\computer_script.cs" />
+    <Compile Include="Assets\Scripts\Exit_Script.cs" />
     <Compile Include="Assets\Scripts\Flashing_Text_Script.cs" />
     <Compile Include="Assets\Scripts\Moth_script.cs" />
     <Compile Include="Assets\Scripts\moth_spawning.cs" />
@@ -155,37 +156,37 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/JONATHAN KOCH/Desktop/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/spart/OneDrive/Documents/GitHub/Game-Jam-1-Fall-2019/Game Jam/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -363,12 +364,6 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
