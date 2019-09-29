@@ -17,11 +17,14 @@ public class Swatter_Script : MonoBehaviour
     private float Tipsy_Timer = 0;
     private float Check = 0;
     public AudioSource Sound_Player;
+    public AudioClip Regular;
+    public AudioClip Bruh;
+    public AudioClip Gone;
     void FixedUpdate()
     {
         Check += Time.deltaTime;
 
-        if (Check >= 5)
+        if (Check >= 2)
         {
             Too_Tipsy();
             Check = 0;
@@ -44,12 +47,26 @@ public class Swatter_Script : MonoBehaviour
         {
             this.transform.rotation = new Quaternion(0, 180, 0, 0);
             this.transform.position = Original_Position;
+
+            int Chance = Random.Range(0, 2);
+
+            if (Chance == 0)
+            {
+                Sound_Player.clip = Regular;
+                Sound_Player.enabled = true;
+            }
+
+            if (Chance == 1)
+            {
+                Sound_Player.clip = Bruh;
+                Sound_Player.enabled = true;
+            }
         }
     }
 
     void Rotate()
     {
-        this.transform.Rotate(-5 * 3, 0, 0);
+        this.transform.Rotate(5 * 3, 0, 0);
     }
 
     void OnTriggerEnter(Collider other)
@@ -76,11 +93,12 @@ public class Swatter_Script : MonoBehaviour
     void Too_Tipsy()
     {
         int Tipsy_Chance = Random.Range(0, 2);
-        print(Tipsy_Chance);
 
         if (Tipsy_Chance == 0)
         {
             Collection.SetActive(false);
+            Sound_Player.clip = Gone;
+            Sound_Player.enabled = true;
             Tipsy_Timer += Time.deltaTime;
         }
 
