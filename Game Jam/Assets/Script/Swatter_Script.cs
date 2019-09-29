@@ -25,10 +25,10 @@ public class Swatter_Script : MonoBehaviour
 
     void Start()
     {
-        Low_X = this.transform.position.x - 20;
-        High_X = this.transform.position.x + 20;
-        Low_Y = this.transform.position.y - 20;
-        High_Y = this.transform.position.y + 20;
+        Low_X = this.transform.position.x - 10;
+        High_X = this.transform.position.x + 10;
+        Low_Y = this.transform.position.y - 8;
+        High_Y = this.transform.position.y + 8;
 
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
@@ -44,7 +44,14 @@ public class Swatter_Script : MonoBehaviour
         }
 
         if (this.transform.position.x <= Low_X || this.transform.position.x >= High_X || this.transform.position.y <= Low_Y || this.transform.position.y >= High_Y)
+        {
+            Speed = 0;
+            Rigid_Body.velocity = new Vector3(0, 0, 0);
             this.transform.position = Original_Position;
+        }
+
+        else
+            Speed = 1;
 
         float Move_Horizontal = Input.GetAxis("Horizontal");
         float Move_Vertical = Input.GetAxis("Vertical");
