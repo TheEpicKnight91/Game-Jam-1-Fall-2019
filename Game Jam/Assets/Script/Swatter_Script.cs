@@ -16,6 +16,7 @@ public class Swatter_Script : MonoBehaviour
     private bool Once = true;
     private float Tipsy_Timer = 0;
     private float Check = 0;
+    public AudioSource Sound_Player;
     void FixedUpdate()
     {
         Check += Time.deltaTime;
@@ -32,6 +33,9 @@ public class Swatter_Script : MonoBehaviour
 
         Rigid_Body.AddForce(Movement * Speed);
         Original_Rotation = this.transform.rotation;
+
+        if (!Sound_Player.isPlaying)
+            Sound_Player.enabled = false;
 
         if (Input.GetButton("Fire1"))
             Rotate();
@@ -57,7 +61,11 @@ public class Swatter_Script : MonoBehaviour
             if (Chance == 0 && Once)
             {
                 GameObject Clone = Instantiate(Moth, other.transform.position, Quaternion.identity);
+                Sound_Player.enabled = true;
                 Once = false;
+
+                if (!Sound_Player.isPlaying)
+                    Sound_Player.enabled = false;
             }
 
             if (Chance == 1)
