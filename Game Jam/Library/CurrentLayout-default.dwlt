@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 3726
+  controlID: 723
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 3680
+  controlID: 729
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -3.5303, y: -4.647634, z: -0.15461686}
     speed: 2
-    m_Value: {x: -3.5303, y: -4.647634, z: -0.15461686}
+    m_Value: {x: -3.5303, y: -4.647634, z: -0.1523947}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -400,11 +400,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.113042496, y: 0.86165935, z: -0.21933562, w: 0.44362313}
     speed: 2
-    m_Value: {x: 0.1130425, y: 0.86165935, z: -0.21933562, w: 0.44362316}
+    m_Value: {x: 0.031807754, y: 0.96351165, z: -0.22998157, w: 0.13319954}
   m_Size:
     m_Target: 25.720486
     speed: 2
-    m_Value: 25.720486
+    m_Value: 18.634075
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -559,20 +559,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\JONATHAN KOCH\Desktop\Game-Jam-1-Fall-2019\Game Jam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6a2e0000
-    m_LastClickedID: 11882
-    m_ExpandedIDs: 000000006a2e0000f62e000000ca9a3b
+    scrollPos: {x: 0, y: 5}
+    m_SelectedIDs: a6330000
+    m_LastClickedID: 13222
+    m_ExpandedIDs: 00000000602e0000ec2e0000fe31000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -600,7 +600,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a2e0000f62e000000ca9a3b
+    m_ExpandedIDs: 00000000602e0000ec2e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -742,7 +742,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: bee0ffff98e9ffff48f9ffff3afbffffc6360000
+      m_ExpandedIDs: e6f6ffff6efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
