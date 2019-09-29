@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class computer_script : MonoBehaviour
 {
-    public float Health = 10.0f;
+    public float Health = 100.0f;
     public Text txt;
     public AudioSource Sound_Play;
 

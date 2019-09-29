@@ -6,8 +6,8 @@ public class moth_spawning : MonoBehaviour
 {
     public GameObject moth_prefab;
 
-    private float spawn_time = 5.0f;
-    private float max_amount = 22.0f;
+    private float spawn_time = 1.0f;
+    private float max_amount = 50.0f;
     private float amount = 0.0f;
     // Start is called before the first frame update
     void Start()
