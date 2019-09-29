@@ -28,7 +28,6 @@ public class Swatter_Script : MonoBehaviour
 
         float Move_Horizontal = Input.GetAxis("Horizontal");
         float Move_Vertical = Input.GetAxis("Vertical");
-
         Vector3 Movement = new Vector3(Move_Horizontal, Move_Vertical, 0.0f);
 
         Rigid_Body.AddForce(Movement * Speed);
@@ -39,7 +38,7 @@ public class Swatter_Script : MonoBehaviour
 
         if (Input.GetButtonUp("Fire1"))
         {
-            this.transform.rotation = new Quaternion(0, 0, 0, 0);
+            this.transform.rotation = new Quaternion(0, 180, 0, 0);
             this.transform.position = Original_Position;
         }
     }

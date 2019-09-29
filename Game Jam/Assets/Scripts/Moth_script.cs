@@ -22,7 +22,6 @@ public class Moth_script : MonoBehaviour
         if (dist <= 0.05f && damage_done == false)
         {
             computer.GetComponent<computer_script>().Health-=2;
-            //damage_done = true;
             Destroy(this.gameObject);
         }
         if (teleport_timer <= 0.0f)
