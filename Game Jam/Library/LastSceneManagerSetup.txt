@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Game.unity
-=======
-- path: Assets/Scenes/Main_Menu.unity
->>>>>>> parent of 400e40e... Merge branch 'master' of https://github.com/TheEpicKnight91/Game-Jam-1-Fall-2019
   isLoaded: 1
   isActive: 1
   isSubScene: 0
