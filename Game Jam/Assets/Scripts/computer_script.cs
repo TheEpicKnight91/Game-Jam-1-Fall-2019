@@ -7,20 +7,23 @@ public class computer_script : MonoBehaviour
 {
     public float Health = 10.0f;
     public Text txt;
-    // Start is called before the first frame update
+    public AudioSource Sound_Play;
+
     void Start()
     {
         txt.GetComponent<Text>().text = "Computer Health: " + Health;
     }
 
-    // Update is called once per frame
     void Update()
     {
         txt.GetComponent<Text>().text = "Computer Health: " + Health;
         if (Health <= 0.0f)
         {
             Time.timeScale = 0;
-
+            Sound_Play.enabled = true;
         }
+
+        if (!Sound_Play.isPlaying)
+            Sound_Play.enabled = false;
     }
 }

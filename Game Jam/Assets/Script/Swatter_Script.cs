@@ -20,6 +20,12 @@ public class Swatter_Script : MonoBehaviour
     public AudioClip Regular;
     public AudioClip Bruh;
     public AudioClip Gone;
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
+    }
     void FixedUpdate()
     {
         Check += Time.deltaTime;
@@ -94,7 +100,7 @@ public class Swatter_Script : MonoBehaviour
     {
         int Tipsy_Chance = Random.Range(0, 2);
 
-        if (Tipsy_Chance == 0)
+        if (Tipsy_Chance == 1)
         {
             Collection.SetActive(false);
             Sound_Player.clip = Gone;
@@ -102,7 +108,7 @@ public class Swatter_Script : MonoBehaviour
             Tipsy_Timer += Time.deltaTime;
         }
 
-        if (Tipsy_Chance == 1)
+        if (Tipsy_Chance == 0)
             Collection.SetActive(true);
     }
 }
